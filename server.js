@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'https://movie-ticket-booking-frontend-sigma.vercel.app' }));
 app.use(express.json());
 
 const USERS_FILE = path.join(__dirname, 'users.json');
